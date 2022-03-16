@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Recipe</title>
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-center">
+      <div class="nav-header">
+        <button class="nav-btn btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"> home </a>
+        <a href="about.html" class="nav-link"> about </a>
+        <a href="recipes.html" class="nav-link"> all recipes </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="new-recipe-container">
+      <article>
+        <form class="form add-recipe-form">
+          <div class="form-row">
+            <label html="name" class="form-label">recipe name</label>
+            <input type="text" name="name" id="name" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label html="details" class="form-label">recipe details</label>
+            <input type="text" name="details" id="details" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label html="details" class="form-label">recipe image</label>
+            <input type="file" id="imagefile" name="imagefile">
+          </div>
+          <button type="submit" class="btn btn-block">
+            add recipe
+          </button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>
