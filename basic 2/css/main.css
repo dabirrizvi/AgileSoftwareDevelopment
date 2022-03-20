@@ -275,6 +275,71 @@ Navbar
 
 /*
 =============== 
+Image Header for the Index Page
+===============
+*/
+
+.index-header-image {
+  height: 40vh;
+  position: relative;
+  margin-bottom: 2rem;
+  background: url('../assets/index/index_header.jpg') center/cover no-repeat;
+  border-radius: var(--borderRadius);
+}
+.index-header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--borderRadius);
+}
+
+.index-header-text {
+  color: var(--white);
+  text-align: center;
+  
+}
+
+.index-des-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--borderRadius);
+}
+
+.index-des-text {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .index-header-text h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+}
+
+.team-list {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+
+.team-img {
+  height: 35rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+
+/*
+=============== 
 Page
 ===============
 */
@@ -367,6 +432,9 @@ Recipes
 }
 
 @media screen and (min-width: 576px) {
+  .team-list {
+    grid-template-columns: 1fr 1fr;
+  }
   .recipes-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -396,6 +464,7 @@ Recipes
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 /*
 =============== 

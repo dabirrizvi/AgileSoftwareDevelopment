@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Structure</title>
-    <!-- normalize -->
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <!-- nav  -->
-    <nav class="navbar">
-      <div class="nav-center">
-        <div class="nav-header">
-          <button class="nav-btn btn">
-            <i class="fas fa-align-justify"></i>
-          </button>
-        </div>
-        <div class="nav-links">
-          <a href="index.html" class="nav-link"> home </a>
-          <a href="about.html" class="nav-link"> about </a>
-          <a href="recipes.html" class="nav-link"> all recipes </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Structure</title>
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- nav  -->
+  <nav class="navbar">
+    <div class="nav-center">
+      <div class="nav-header">
+        <button class="nav-btn btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link"> home </a>
+        <a href="recipes.html" class="nav-link"> all recipes </a>
+      </div>
+    </div>
+  </nav>
+  <!-- end of nav -->
+  <!-- main -->
+  <main class="page">
+    <!-- header -->
+    <header class="index-header-image">
+      <div class="index-header-container">
+        <div class="index-header-text">
+          <h1>Your food your choice</h1>
+          <a href="recipes.html" class="nav-link">
+          <h4>See Menu</h4>
+          </a>
         </div>
       </div>
-    </nav>
-    <!-- end of nav -->
-    <!-- main -->
-    <main class="page">
-      <p>Some information about the site here</p>   
-      <section class="recipes-container">
-        <!-- recipes list -->
-        <div class="recipes-list">
-          <!-- single recipe -->
-          <a href="pancakes.html" class="recipe">
-            <img
-              src="./assets/recipes/pancakes.jpeg"
-              class="img recipe-img"
-              alt=""
-            />
-            <h5>Pancakes</h5>
-            <p>delicious pancakes, serves eight</p>
-          </a>
-          <!-- end of single recipe -->
-          <!-- single recipe -->
-          <a href="indian.html" class="recipe">
-            <img
-              src="./assets/recipes/indian.jpeg"
-              class="img recipe-img"
-              alt=""
-            />
-            <h5>Indian scrambled masala egg</h5>
-            <p>Indian-style cuisine, serves two</p>
-          </a>
-          <!-- end of single recipe -->
-          <!-- single recipe -->
-          <a href="vegan.html" class="recipe">
-            <img
-              src="./assets/recipes/vegan.jpg"
-              class="img recipe-img"
-              alt=""
-            />
-            <h5>Vegan broccoli and carrot stir fry recipe</h5>
-            <p>Vegan delightness, serves two</p>
-          </a>
-          <!-- end of single recipe -->
-          <!-- single recipe -->
-          <!-- <a href="single-recipe.html" class="recipe">
-            <img
-              src="./assets/recipes/recipe.jpeg"
-              class="img recipe-img"
-              alt=""
-            />
-            <h5>4</h5>
-            <p>details</p>
-          </a> -->
-          <!-- end of single recipe -->
-        </div>
-      </section>
-    </main>
-    <!-- end of main -->
-  
-    <script src="./js/app.js"></script>
-  </body>
+    </header>
+    <div class="index-des-container">
+      <p class="index-des-text" >
+        Hi There!
+        We are LISKOV!
+        We have developed this website to make cooking easier and healthier for Students!
+
+        <br ><br>This project is part of our module - CSM2021 (Agile Software Development Project). We have designed special
+        recipes from different sub-continents. There are recipes for everyone! you're Vegan? Lactose Intolerant?
+        Vegetarian? No matter what you're looking for, We have it all!
+
+        <br ><br>We have designed quick and easy recipes which can be modified so that you can design your own mix of the recipe
+        according to your taste. We have provided a shopping list, so you know what you're looking for and whether it
+        fits
+        your budget! 
+        ​
+        <br ><br>Did you want to share your version of the recipe with a friend or a family member? We have you covered! All our
+        recipes can be shared with just a click! We also provide nutrition information for all the recipes so that you
+        know what you can eat when you're on a diet.
+      </p>
+    </div>
+
+    <h1 class="index-des-text">Meet the Team</h1>
+    <!-- end of header -->
+    <div class="team-list">
+      <!-- single team item -->
+      <div>
+        <img src="./assets/index/binbin.jpg" class="img team-img" alt="" />
+        <h5>BinBin</h5>
+      </div>
+      <!-- end of team item -->
+      <!-- single team item -->
+      <div>
+        <img src="./assets/recipes/recipe.jpeg" class="img team-img" alt="" />
+        <h5>Kaiser</h5>
+      </div>
+      <!-- single team item -->
+      <div>
+        <img src="./assets/recipes/recipe.jpeg" class="img team-img" alt="" />
+        <h5>Dabir</h5>
+      </div>
+      <!-- single team item -->
+      <div>
+        <img src="./assets/recipes/recipe.jpeg" class="img team-img" alt="" />
+        <h5>Davies</h5>
+      </div>
+      <!-- end of team item -->
+    </div>
+  </main>
+  <!-- end of main -->
+  <script src="./js/app.js"></script>
+</body>
+
 </html>
