@@ -4,66 +4,12 @@
   box-sizing: border-box;
 }
 
-:root {
-  /* colors */
-  --primary-100: #e2e0ff;
-  --primary-200: #c1beff;
-  --primary-300: #a29dff;
-  --primary-400: #837dff;
-  --primary-500: #645cff;
-  --primary-600: #504acc;
-  --primary-700: #3c3799;
-  --primary-800: #282566;
-  --primary-900: #141233;
-
-  /* grey */
-  --grey-50: #f8fafc;
-  --grey-100: #f1f5f9;
-  --grey-200: #e2e8f0;
-  --grey-300: #cbd5e1;
-  --grey-400: #94a3b8;
-  --grey-500: #64748b;
-  --grey-600: #475569;
-  --grey-700: #334155;
-  --grey-800: #1e293b;
-  --grey-900: #0f172a;
-  /* rest of the colors */
-  --black: #222;
-  --white: #fff;
-  --red-light: #f8d7da;
-  --red-dark: #842029;
-  --green-light: #d1e7dd;
-  --green-dark: #0f5132;
-
-  /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
-  --smallText: 0.7em;
-  /* rest of the vars */
-  --backgroundColor: var(--grey-50);
-  --textColor: var(--grey-900);
-  --borderRadius: 0.25rem;
-  --letterSpacing: 1px;
-  --transition: 0.3s ease-in-out all;
-  --max-width: 1120px;
-  --fixed-width: 600px;
-
-  /* box shadow*/
-  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
 body {
-  background: var(--backgroundColor);
-  font-family: var(--bodyFont);
+  background: white;
+  font-family: black;
   font-weight: 400;
   line-height: 1.75;
-  color: var(--textColor);
+  color: black;
 }
 
 p {
@@ -79,11 +25,10 @@ h4,
 h5 {
   margin: 0;
   margin-bottom: 1.38rem;
-  font-family: var(--headingFont);
+  font-family: black;
   font-weight: 400;
   line-height: 1.3;
   text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
 }
 
 h1 {
@@ -109,12 +54,14 @@ h5 {
 
 small,
 .text-small {
-  font-size: var(--smallText);
+  font-size: 0.7em;
+  ;
 }
 
 a {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -125,52 +72,21 @@ ul {
   display: block;
   object-fit: cover;
 }
+
 /* buttons */
 
 .btn {
   cursor: pointer;
-  color: var(--white);
-  background: var(--primary-500);
+  color: white;
+  background: black;
   border: transparent;
-  border-radius: var(--borderRadius);
-  letter-spacing: var(--letterSpacing);
   padding: 0.375rem 0.75rem;
-  box-shadow: var(--shadow-1);
-  transition: var(--transtion);
   text-transform: capitalize;
   display: inline-block;
 }
-.btn:hover {
-  background: var(--primary-700);
-  box-shadow: var(--shadow-3);
-}
-.btn-hipster {
-  color: var(--primary-500);
-  background: var(--primary-200);
-}
-.btn-hipster:hover {
-  color: var(--primary-200);
-  background: var(--primary-700);
-}
+
 .btn-block {
   width: 100%;
-}
-
-/* alerts */
-.alert {
-  padding: 0.375rem 0.75rem;
-  margin-bottom: 1rem;
-  border-color: transparent;
-  border-radius: var(--borderRadius);
-}
-
-.alert-danger {
-  color: var(--red-dark);
-  background: var(--red-light);
-}
-.alert-success {
-  color: var(--green-dark);
-  background: var(--green-light);
 }
 
 /*
@@ -184,19 +100,23 @@ Navbar
   align-items: center;
   justify-content: center;
 }
+
 .nav-center {
   width: 90vw;
-  max-width: var(--max-width);
+  max-width: 1120px;
 }
+
 .nav-header {
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-header img {
   width: 200px;
 }
+
 .nav-logo {
   display: flex;
   align-items: flex-end;
@@ -205,16 +125,18 @@ Navbar
 .nav-btn {
   padding: 0.15rem 0.75rem;
 }
+
 .nav-btn i {
   font-size: 1.25rem;
 }
+
 .nav-links {
   height: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: var(--transition);
 }
+
 .show-links {
   height: 23.9375rem;
 }
@@ -224,14 +146,9 @@ Navbar
   text-align: center;
   font-size: 1.25rem;
   text-transform: capitalize;
-  color: var(--grey-900);
-  letter-spacing: var(--letterSpacing);
+  color: grey;
   padding: 1rem 0;
-  border-top: 1px solid var(--grey-500);
-  transition: var(--transition);
-}
-.nav-link:hover {
-  color: var(--primary-500);
+  border-top: 1px grey;
 }
 
 .contact-link a {
@@ -242,10 +159,12 @@ Navbar
   .navbar {
     height: 6rem;
   }
+
   .nav-center {
     display: flex;
     align-items: center;
   }
+
   .nav-header {
     padding: 0;
     margin-right: 2rem;
@@ -255,18 +174,21 @@ Navbar
   .nav-btn {
     display: none;
   }
+
   .nav-links {
     height: auto !important;
     flex-direction: row;
     align-items: center;
     width: 100%;
   }
+
   .nav-link {
     padding: 0;
     border-top: none;
     margin-right: 1rem;
     font-size: 1rem;
   }
+
   .contact-link {
     margin-right: 0;
     margin-left: auto;
@@ -284,8 +206,9 @@ Image Header for the Index Page
   position: relative;
   margin-bottom: 2rem;
   background: url('../assets/index/index_header.jpg') center/cover no-repeat;
-  border-radius: var(--borderRadius);
+  border-radius: 0.25rem;
 }
+
 .index-header-container {
   position: absolute;
   top: 0;
@@ -296,13 +219,13 @@ Image Header for the Index Page
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: var(--borderRadius);
+  border-radius: 0.25rem;
 }
 
 .index-header-text {
-  color: var(--white);
+  color: white;
   text-align: center;
-  
+
 }
 
 .index-des-container {
@@ -311,7 +234,7 @@ Image Header for the Index Page
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--borderRadius);
+  border-radius: 0.25rem;
 }
 
 .index-des-text {
@@ -334,7 +257,7 @@ Image Header for the Index Page
 
 .team-img {
   height: 35rem;
-  border-radius: var(--borderRadius);
+  border-radius: 0.25rem;
   margin-bottom: 1rem;
 }
 
@@ -346,9 +269,10 @@ Page
 
 .page {
   width: 90vw;
-  max-width: var(--max-width);
+  max-width: 1120px;
   margin: 0 auto;
 }
+
 .page {
   padding-top: 2rem;
   min-height: calc(100vh - (6rem + 4rem));
@@ -377,19 +301,18 @@ New Recipe Page
 
 .form-label {
   display: block;
-  font-size: var(--smallText);
+  font-size: 0.7em;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
-  letter-spacing: var(--letterSpacing);
 }
 
 .form-input,
 .form-textarea {
   width: 100%;
   padding: 0.375rem 0.75rem;
-  border-radius: var(--borderRadius);
-  background: var(--backgroundColor);
-  border: 1px solid var(--grey-200);
+  border-radius: 0.25rem;
+  background: white;
+  border: 1px solid grey;
 }
 
 /*
@@ -412,32 +335,36 @@ Recipes
 .recipe {
   display: block;
 }
+
 .recipe-img {
   height: 15rem;
-  border-radius: var(--borderRadius);
+  border-radius: 0.25rem;
   margin-bottom: 1rem;
 }
+
 .recipe h5 {
   margin-bottom: 0;
   margin-top: 0.25rem;
   line-height: 1;
-  color: var(--grey-700);
+  color: grey;
 }
+
 .recipe p {
   margin-bottom: 0;
   line-height: 1;
-  color: var(--grey-500);
+  color: grey;
   margin-top: 0.5rem;
-  letter-spacing: var(--letterSpacing);
 }
 
 @media screen and (min-width: 576px) {
   .team-list {
     grid-template-columns: 1fr 1fr;
   }
+
   .recipes-list {
     grid-template-columns: 1fr 1fr;
   }
+
   .recipe-img {
     height: 10rem;
   }
@@ -447,6 +374,7 @@ Recipes
   .recipes-container {
     gap: 1rem;
   }
+
   .recipes-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -460,6 +388,7 @@ Recipes
   .recipe h5 {
     font-size: 1.15rem;
   }
+
   .recipes-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -476,6 +405,7 @@ About Page
   text-transform: none;
   font-weight: bold;
 }
+
 .about-page {
   display: grid;
   gap: 2rem 4rem;
@@ -485,6 +415,7 @@ About Page
 .featured-title {
   text-align: center;
 }
+
 /*
 =============== 
 Contact Page
@@ -494,11 +425,13 @@ Contact Page
   width: 100%;
   margin: 0;
 }
+
 .contact-container {
   display: grid;
   gap: 2rem 3rem;
   padding-bottom: 3rem;
 }
+
 @media screen and (min-width: 992px) {
   .contact-container {
     grid-template-columns: 1fr 450px;
@@ -513,8 +446,9 @@ Recipe Template
 */
 
 .recipe-info p {
-  color: var(--grey-600);
+  color: grey;
 }
+
 .recipe-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -522,10 +456,12 @@ Recipe Template
   margin: 2rem 0;
   text-align: center;
 }
+
 .recipe-icons i {
   font-size: 1.5rem;
-  color: var(--primary-500);
+  color: grey;
 }
+
 .recipe-icons h5,
 .recipe-icons p {
   margin-bottom: 0;
@@ -533,7 +469,7 @@ Recipe Template
 }
 
 .recipe-icons p {
-  color: var(--grey-600);
+  color: grey;
 }
 
 @media screen and (min-width: 992px) {
@@ -542,22 +478,26 @@ Recipe Template
     align-items: center;
   }
 }
+
 .recipe-content {
   padding: 3rem 0;
   display: grid;
   gap: 2rem 5rem;
 }
+
 @media screen and (min-width: 992px) {
   .recipe-content {
     grid-template-columns: 2fr 1fr;
   }
 }
+
 .single-instruction header {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1.5rem;
   align-items: center;
 }
+
 .single-instruction header p {
   text-transform: uppercase;
   font-weight: 600;
@@ -566,7 +506,7 @@ Recipe Template
 
 .single-instruction header div {
   height: 2px;
-  background: var(--grey-300);
+  background: grey;
 }
 
 .second-column {
@@ -575,6 +515,6 @@ Recipe Template
 }
 
 .single-ingredient {
-  border-bottom: 2px solid var(--grey-300);
+  border-bottom: 2px solid grey;
   padding-bottom: 0.75rem;
 }

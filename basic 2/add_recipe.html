@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+  <!-- navigation area  -->
   <nav class="navbar">
     <div class="nav-center">
       <div class="nav-header">
@@ -27,23 +27,30 @@
       </div>
     </div>
   </nav>
+  <!-- end of navigation area -->
 
   <main class="page">
+    <!-- container for holding new recipe form -->
     <section class="new-recipe-container">
       <article>
+        <!-- new recipe form -->
         <form class="form add-recipe-form">
+          <!-- recipe name element -->
           <div class="form-row">
             <label html="name" class="form-label">recipe name</label>
             <input type="text" name="name" id="name" class="form-input" />
           </div>
+          <!-- recipe details element -->
           <div class="form-row">
             <label html="details" class="form-label">recipe details</label>
             <input type="text" name="details" id="details" class="form-input" />
           </div>
+          <!-- recipe image upload element -->
           <div class="form-row">
             <label html="details" class="form-label">recipe image</label>
             <input type="file" id="imagefile" name="imagefile">
           </div>
+          <!-- submit button for the new recipe -->
           <button type="submit" class="btn btn-block">
             add recipe
           </button>
