@@ -1,20 +1,20 @@
 	<?php
 		require 'get_db_handle_path.php';
 		require GET_DB_HANDLE_PATH."/get_db_handle.php";
-		
+		require 'getID.php';
 		$conn = get_db_handle();
-		$name = $_REQUEST['name'];
-		$data = $_REQUEST['details']
-		echo $name;
-		$stmt =$conn -> prepare("insert into recipe (recipe_id,recipe_name,vegan,vegetarian,dairy_free) values('201',:name,'1','1','1')"); 
-		$stmt->bindParam(':name',$name);
+		$name = $_POST['name'];
+		//$data = $_REQUEST['details']
+		$ID=getIDVal();
 		
-		$stmt -> execute();
-		$stmt = null;
-		$stmt =$conn -> prepare("insert into instructions (recipe_id,recipe_name,instructions) values('201',:name,:data)"); 
+		//$name="Food3";
+		echo $ID++;
+		echo $name;
+		$stmt =$conn -> prepare("insert into recipe (recipe_id,recipe_name,vegan,vegetarian,dairy_free) values(:id,:name,'1','1','1')"); 
 		$stmt->bindParam(':name',$name);
-		$stmt->bindParam(':data',$data);
+		$stmt->bindParam(':id',$ID);
 		$stmt -> execute();
+		
 		
 		$stmt = null;
 		$conn = null;
